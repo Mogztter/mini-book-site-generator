@@ -126,7 +126,17 @@ function buildAggregate (componentVersionBuckets) {
   const aggregateMap = flattenDeep(componentVersionBuckets).reduce((accum, batch) => {
     const key = batch.version + '@' + batch.name
     const entry = accum.get(key)
-    return accum.set(key, entry ? Object.assign(entry, batch, { files: [...entry.files, ...batch.files] }) : batch)
+    const result = entry ? Object.assign(entry, batch, { files: [...entry.files, ...batch.files] }) : batch
+    for (const file of result.files) {
+      const filepath = file.src.path
+      const pathSegments = filepath.split('/')
+      // map chapters/**/* to modules/ROOT/pages/**/**
+      if (pathSegments[0] === 'chapters') {
+        pathSegments.shift()
+        file.path = `modules/ROOT/pages/${pathSegments.join('/')}`
+      }
+    }
+    return accum.set(key, result)
   }, new Map())
   return [...aggregateMap.values()]
 }
