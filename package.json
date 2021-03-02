@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/Mogztter/mini-book-site-generator#readme",
   "dependencies": {
-    "@antora/content-classifier": "^2.3.4",
     "@antora/page-composer": "^2.3.4",
     "@antora/playbook-builder": "^2.3.4",
     "@antora/site-mapper": "^2.3.4",
     "@antora/site-publisher": "^2.3.4",
+    "@ggrossetie/mini-book-content-classifier": "file:packages/content-classifier",
     "@ggrossetie/mini-book-asciidoc-loader": "file:packages/asciidoc-loader",
     "@ggrossetie/mini-book-content-aggregator": "file:packages/content-aggregator",
     "@ggrossetie/mini-book-document-converter": "file:packages/document-converter",
