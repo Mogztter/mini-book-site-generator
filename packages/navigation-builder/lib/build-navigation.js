@@ -1,6 +1,6 @@
 'use strict'
 
-const loadAsciiDoc = require('@antora/asciidoc-loader')
+const loadAsciiDoc = require('@ggrossetie/mini-book-asciidoc-loader')
 const NavigationCatalog = require('./navigation-catalog')
 
 const LINK_RX = /<a href="([^"]+)"(?: class="([^"]+)")?>(.+?)<\/a>/

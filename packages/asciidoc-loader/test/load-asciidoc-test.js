@@ -3,7 +3,7 @@
 
 const { expect, heredoc } = require('../../../test/test-utils')
 
-const { loadAsciiDoc, resolveConfig } = require('@antora/asciidoc-loader')
+const { loadAsciiDoc, resolveConfig } = require('../lib')
 const mockContentCatalog = require('../../../test/mock-content-catalog')
 const ospath = require('path')
 
@@ -56,7 +56,7 @@ describe('loadAsciiDoc()', () => {
   })
 
   it('should export loadAsciiDoc as default function', () => {
-    expect(require('@antora/asciidoc-loader')).to.equal(loadAsciiDoc)
+    expect(require('../lib')).to.equal(loadAsciiDoc)
   })
 
   it('should load document model from AsciiDoc contents', () => {

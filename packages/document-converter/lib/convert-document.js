@@ -1,6 +1,6 @@
 'use strict'
 
-const { loadAsciiDoc, extractAsciiDocMetadata } = require('@antora/asciidoc-loader')
+const { loadAsciiDoc, extractAsciiDocMetadata } = require('@ggrossetie/mini-book-asciidoc-loader')
 
 /**
  * Converts the contents on the specified file from AsciiDoc to embedded HTML.

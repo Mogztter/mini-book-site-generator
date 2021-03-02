@@ -1,9 +1,0 @@
-= Antora packages
-:uri-antora-asciidoc-loader: https://gitlab.com/antora/antora/-/tree/v2.3.4/packages/asciidoc-loader
-:uri-antora-page-composer: https://gitlab.com/antora/antora/-/tree/v2.3.4/packages/page-composer
-:uri-antora-document-converter: https://gitlab.com/antora/antora/-/tree/v2.3.4/packages/document-converter
-:uri-antora-navigation-builder: https://gitlab.com/antora/antora/-/tree/v2.3.4/packages/navigation-builder
-:uri-antora-redirect-producer: https://gitlab.com/antora/antora/-/tree/v2.3.4/packages/redirect-producer
-:uri-antora-ui-loader: https://gitlab.com/antora/antora/-/tree/v2.3.4/packages/ui-loader
-
-This directory contains custom Antora packages.

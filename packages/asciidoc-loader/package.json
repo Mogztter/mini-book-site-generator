@@ -1,23 +1,22 @@
 {
-  "name": "@antora/asciidoc-loader",
-  "version": "2.3.4",
+  "name": "@ggrossetie/mini-book-asciidoc-loader",
+  "version": "0.1.0",
   "description": "Loads AsciiDoc content into an Asciidoctor Document object (AST) for use in an Antora documentation pipeline.",
   "license": "MPL-2.0",
   "author": "OpenDevise Inc. (https://opendevise.com)",
   "contributors": [
     "Dan Allen <dan@opendevise.com>",
     "Sarah White <sarah@opendevise.com>",
-    "Guillaume Grossetie <g.grossetie@gmail.com>"
+    "Guillaume Grossetie <ggrossetie@yuzutech.fr>"
   ],
   "homepage": "https://antora.org",
-  "repository": "gitlab:antora/antora",
+  "repository": "https://github.com/Mogztter/mini-book-asciidoc-loader",
   "bugs": {
-    "url": "https://gitlab.com/antora/antora/issues"
+    "url": "https://github.com/Mogztter/mini-book-asciidoc-loader/issues"
   },
   "main": "lib/index.js",
   "dependencies": {
-    "asciidoctor.js": "1.5.9",
-    "opal-runtime": "1.0.11"
+    "@asciidoctor/core": "2.2.1"
   },
   "engines": {
     "node": ">=8.11.0"

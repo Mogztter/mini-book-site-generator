@@ -3,8 +3,8 @@
 
 const { expect, heredoc } = require('../../../test/test-utils')
 
-const buildNavigation = require('@antora/navigation-builder')
-const { resolveConfig: resolveAsciiDocConfig } = require('@antora/asciidoc-loader')
+const buildNavigation = require('../lib')
+const { resolveConfig: resolveAsciiDocConfig } = require('@ggrossetie/mini-book-asciidoc-loader')
 const mockContentCatalog = require('../../../test/mock-content-catalog')
 
 describe('buildNavigation()', () => {

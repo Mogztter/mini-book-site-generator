@@ -3,7 +3,7 @@
 
 const { expect } = require('../../../test/test-utils')
 
-const produceRedirects = require('@antora/redirect-producer')
+const produceRedirects = require('../lib')
 const mockContentCatalog = require('../../../test/mock-content-catalog')
 
 describe('produceRedirects()', () => {

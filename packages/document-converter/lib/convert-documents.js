@@ -1,7 +1,7 @@
 'use strict'
 
 const convertDocument = require('./convert-document')
-const { loadAsciiDoc, extractAsciiDocMetadata } = require('@antora/asciidoc-loader')
+const { loadAsciiDoc, extractAsciiDocMetadata } = require('@ggrossetie/mini-book-asciidoc-loader')
 
 /**
  * Converts the contents of publishable pages with the media type text/asciidoc

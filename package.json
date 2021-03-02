@@ -1,20 +1,33 @@
 {
-  "name": "okta-book-site-generator",
+  "name": "mini-book-site-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/generator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mogztter/okta-book-site-generator.git"
+    "url": "git+https://github.com/Mogztter/mini-book-site-generator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mogztter/okta-book-site-generator/issues"
+    "url": "https://github.com/Mogztter/mini-book-site-generator/issues"
   },
-  "homepage": "https://github.com/Mogztter/okta-book-site-generator#readme"
+  "homepage": "https://github.com/Mogztter/mini-book-site-generator#readme",
+  "dependencies": {
+    "@antora/content-classifier": "^2.3.4",
+    "@antora/page-composer": "^2.3.4",
+    "@antora/playbook-builder": "^2.3.4",
+    "@antora/site-mapper": "^2.3.4",
+    "@antora/site-publisher": "^2.3.4",
+    "@ggrossetie/mini-book-asciidoc-loader": "file:packages/asciidoc-loader",
+    "@ggrossetie/mini-book-content-aggregator": "file:packages/content-aggregator",
+    "@ggrossetie/mini-book-document-converter": "file:packages/document-converter",
+    "@ggrossetie/mini-book-navigation-builder": "file:packages/navigation-builder",
+    "@ggrossetie/mini-book-redirect-producer": "file:packages/redirect-producer",
+    "@ggrossetie/mini-book-ui-loader": "file:packages/ui-loader"
+  }
 }

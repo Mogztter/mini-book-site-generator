@@ -1,21 +1,22 @@
 {
-  "name": "@antora/redirect-producer",
-  "version": "2.3.4",
+  "name": "@ggrossetie/mini-book-redirect-producer",
+  "version": "0.1.0",
   "description": "Produces redirects (HTTP redirections) for pages in an Antora site.",
   "license": "MPL-2.0",
   "author": "OpenDevise Inc. (https://opendevise.com)",
   "contributors": [
     "Dan Allen <dan@opendevise.com>",
-    "Sarah White <sarah@opendevise.com>"
+    "Sarah White <sarah@opendevise.com>",
+    "Guillaume Grossetie <ggrossetie@yuzutech.fr>"
   ],
   "homepage": "https://antora.org",
-  "repository": "gitlab:antora/antora",
+  "repository": "https://github.com/Mogztter/mini-book-redirect-producer",
   "bugs": {
-    "url": "https://gitlab.com/antora/antora/issues"
+    "url": "https://github.com/Mogztter/mini-book-redirect-producer/issues"
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@antora/asciidoc-loader": "2.3.4",
+    "@ggrossetie/mini-book-asciidoc-loader": "file:../asciidoc-loader",
     "vinyl": "~2.2"
   },
   "engines": {
