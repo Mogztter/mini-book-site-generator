@@ -135,6 +135,9 @@ function buildAggregate (componentVersionBuckets) {
         pathSegments.shift()
         file.path = `modules/ROOT/pages/${pathSegments.join('/')}`
       }
+      if (pathSegments[0] === 'images') {
+        file.path = `modules/ROOT/${pathSegments.join('/')}`
+      }
     }
     return accum.set(key, result)
   }, new Map())
