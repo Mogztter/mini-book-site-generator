@@ -1,6 +1,6 @@
 'use strict'
 
-const loadAsciiDoc = require('@ggrossetie/mini-book-asciidoc-loader')
+const loadAsciiDoc = require('../../asciidoc-loader/lib/index')
 const NavigationCatalog = require('./navigation-catalog')
 
 const LINK_RX = /<a href="([^"]+)"(?: class="([^"]+)")?>(.+?)<\/a>/

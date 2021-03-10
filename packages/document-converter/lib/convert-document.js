@@ -1,6 +1,6 @@
 'use strict'
 
-const { loadAsciiDoc, extractAsciiDocMetadata } = require('@ggrossetie/mini-book-asciidoc-loader')
+const { loadAsciiDoc, extractAsciiDocMetadata } = require('../../asciidoc-loader/lib/index')
 
 /**
  * Converts the contents on the specified file from AsciiDoc to embedded HTML.

@@ -1,6 +1,6 @@
 'use strict'
 
-const computeRelativeUrlPath = require('@ggrossetie/mini-book-asciidoc-loader/lib/util/compute-relative-url-path')
+const computeRelativeUrlPath = require('../../asciidoc-loader/lib/util/compute-relative-url-path')
 const File = require('vinyl')
 const { URL } = require('url')
 
