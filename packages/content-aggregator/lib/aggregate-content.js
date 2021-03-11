@@ -130,12 +130,14 @@ function buildAggregate (componentVersionBuckets) {
     for (const file of result.files) {
       const filepath = file.src.path
       const pathSegments = filepath.split('/')
-      // map chapters/**/* to modules/ROOT/pages/**/**
-      if (pathSegments[0] === 'chapters') {
+      // map chapters/**/* to modules/ROOT/pages/**/*
+      const firstPathSegment = pathSegments[0]
+      if (firstPathSegment === 'chapters') {
         pathSegments.shift()
         file.path = `modules/ROOT/pages/${pathSegments.join('/')}`
       }
-      if (pathSegments[0] === 'images') {
+      // map {images|examples|partials|attachments}/**/* to modules/ROOT/{images|examples|partials|attachments}/**/*
+      if (firstPathSegment === 'images' || firstPathSegment === 'examples' || firstPathSegment === 'partials' || firstPathSegment === 'attachments') {
         file.path = `modules/ROOT/${pathSegments.join('/')}`
       }
     }
