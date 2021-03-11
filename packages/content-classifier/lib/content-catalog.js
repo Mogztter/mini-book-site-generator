@@ -365,7 +365,7 @@ function inflateSrc (src, family = 'page', mediaType = 'text/asciidoc') {
 }
 
 function computeOut (src, family, htmlUrlExtensionStyle) {
-  const component = src.component
+  const component = src.component === 'ROOT' ? '' : src.component
   const version = src.version === 'master' ? '' : src.version
   const module_ = src.module === 'ROOT' ? '' : src.module
 
