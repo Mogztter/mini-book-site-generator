@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Mogztter/mini-book-site-generator.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Guillaume Grossetie <ggrossetie@yuzutech.fr>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Mogztter/mini-book-site-generator/issues"
   },
