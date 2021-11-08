@@ -1,5 +1,7 @@
 # Mini-Book Site Generator
 
+[![npm](https://img.shields.io/npm/v/mini-book-site-generator)](https://www.npmjs.com/package/mini-book-site-generator)
+
 An [Antora](https://antora.org/) site generator that produces mini-book site.
 
 ## Install
